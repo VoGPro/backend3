@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="margin: 0;">
+    <header class="header">
+        <div class="inhead">
+            <img src="images/BingChilling.jpg" alt="Avatar" class="avatar">
+            <h1 class="site_name">Bing Chilling</h1>
+        </div>
+    </header>
+
+        <p><a name="form"></a></p>
+        <form action="URL_отправки_данных" method="POST">
+            <label>
+                Поле для имени:<br />
+                <input name="field-name-1" value="Имя" />
+            </label><br /><br />
+            <label>
+                Поле для email:<br />
+                <input name="field-email" value="test@example.com" type="email" />
+            </label><br /><br />
+            <label>
+                Поле для даты рождения:<br />
+                <input name="field-date" value="2022-09-12" type="date" />
+            </label><br /><br />
+            Пол:<br />
+            <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1" />
+                Мужчина
+            </label>
+            <label><input type="radio" name="radio-group-1" value="Значение2" />
+                Женщина
+            </label><br /><br />
+            Количество конечностей:<br />
+            <label><input type="radio" name="radio-group-2" value="Значение1" />
+                Инвалид
+            </label>
+            <label><input type="radio" checked="checked" name="radio-group-2" value="Значение2" />
+                Не инвалид
+            </label>
+            <label><input type="radio" name="radio-group-2" value="Значение3" />
+                Мутант
+            </label>
+            <label><input type="radio" name="radio-group-2" value="Значение4" />
+                Что?
+            </label><br /><br />
+            <label>
+                Сверхспособности:<br />
+                <select name="field-name-8[]" multiple="multiple">
+                    <option value="Значение0" selected="selected">none</option>
+                    <option value="Значение1">бессмертие</option>
+                    <option value="Значение2">прохождение сквозь стены</option>
+                    <option value="Значение3">левитация</option>
+                    <option value="Значение4">телекинез</option>
+                </select>
+            </label><br /><br />
+            <label>
+                Биография:<br />
+                <textarea name="field-name-2">начальное значение</textarea>
+            </label><br /><br />
+            <label><input type="checkbox" checked="checked" name="check-1" />
+                С контрактом ознакомлен(а)
+            </label><br /><br />
+            <input type="submit" value="Отправить" />
+        </form>
+    </div>
+
+    <footer class="floor">
+        <div id="developer_kvn">(c) Кан Владимир 2022</div>
+    </footer>
+</body>
+
+</html>
