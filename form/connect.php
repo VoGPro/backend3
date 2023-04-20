@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,7 +28,7 @@ $contract = $_POST['contract'];
 //Database connection
 $conn = new mysqli('localhost','root','','test');
 if ($conn->connect_error) {
-    die('Connection failed: '.$conn->connection_error);
+    die('Connection failed: '.$conn->connect_error);
 } else {
     $stmt = $conn->prepare("INSERT INTO users(name, email, birth_date, gender, limbs, bio, contract)
     VALUES (?, ?, ?, ?, ?, ?, ?)");
